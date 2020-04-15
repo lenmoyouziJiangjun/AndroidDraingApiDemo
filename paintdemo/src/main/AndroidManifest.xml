@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lll.source.paint.demo">
+
+    <application
+        android:name=".PaintApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".canvas.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PaintDemoActivity"
+            android:launchMode="singleTask" />
+
+        <activity android:name=".xfermodes.scratch.ScratchViewDemoActivity" />
+        <activity android:name=".xfermodes.XfermodesActivity" />
+        <activity
+            android:name=".colorfilter.ColorFilterActivity"
+            android:hardwareAccelerated="false" />
+        <activity android:name=".canvas.particle.ParticleActivity" />
+        <activity android:name=".path.PathDemoActivity" />
+        <activity android:name=".matrix.Custom3DViewActivity" />
+    </application>
+
+</manifest>

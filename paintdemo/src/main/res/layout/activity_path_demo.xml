@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <com.lll.source.paint.demo.path.BezierView
+        android:id="@+id/bezier"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/path"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.lll.source.paint.demo.path.PathMeasureView
+        android:id="@+id/path"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/drag"
+        app:layout_constraintTop_toBottomOf="@id/bezier" />
+
+    <com.lll.source.paint.demo.path.DragBubbleView
+        android:id="@+id/drag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:bubble_color="#ff0000"
+        app:bubble_radius="12dp"
+        app:bubble_text="9"
+        app:bubble_textColor="#ffffff"
+        app:bubble_textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/drag2"
+        app:layout_constraintTop_toBottomOf="@id/path" />
+
+    <com.lll.source.paint.demo.path.DragBubbleView
+        android:id="@+id/drag2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:bubble_color="#00ff00"
+        app:bubble_radius="12dp"
+        app:bubble_text="99"
+        app:bubble_textColor="#ffffff"
+        app:bubble_textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/drag"
+        app:layout_constraintRight_toLeftOf="@id/drag3"
+        app:layout_constraintTop_toBottomOf="@id/path" />
+
+    <com.lll.source.paint.demo.path.DragBubbleView
+        android:id="@+id/drag3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:bubble_color="#0000ff"
+        app:bubble_radius="12dp"
+        app:bubble_text="999"
+        app:bubble_textColor="#ffffff"
+        app:bubble_textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/drag2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/path" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

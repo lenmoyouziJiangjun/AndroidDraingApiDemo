@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lll.source.paint.demo.matrix.Custom3DView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/beauty" />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/girl" />
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/timg" />
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/timg2" />
+    <ImageView
+        android:id="@+id/img_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/timg3" />
+
+</com.lll.source.paint.demo.matrix.Custom3DView>
